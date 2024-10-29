@@ -1,0 +1,163 @@
+header {
+    padding: 20px 0;
+}
+:root{
+    font-family: "Alice", serif;
+    line-height: 150%;
+    color: #573A37;
+
+}
+body {
+    margin: 0 auto;
+    background-color: #573824;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    align-items: baseline;
+}
+.caixa h1{
+    font-size: 3em;
+    font-family: fantasy;
+    font-weight: 900;
+}
+
+.caixa img {
+    width: 150px;
+    height: 170;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav ul {
+    display: inline;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #F0E8C2;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #F0E8C2;
+    text-align: center;
+    align-content: center;
+    clear: left;
+    height: 175px;
+    clear: both;
+}
+
+
+/* css da pagina inicial */
+.banner {
+    width: 100%;
+    margin-bottom: 1em;
+    height: 500px;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 3em;
+    margin: 0 0 1em;
+    clear: left;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+
+.miriam {
+    width: 300px;
+    height: auto;
+    float: right;
+    margin: 0 20px 20px 0;
+}
+
+.principal {
+    padding: 3em 0;
+    background-color:#F0E8C2;
+    width: 940px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.principal p {
+    font-size: 25px;
+    width: 60%;
+    margin: 1em 0 1em 1em;
+    text-align: center;
+}
+
+.video {
+    width: 660px;
+    margin: 1em auto;
+    margin-left: 55%;
+    transform: translate(-50%);
+    position: relative;
+    clear: both;
+    border: 5px;
+}
+
+/* css pagina de receitas */
+.receitas {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+    position: relative;
+}
+
+.receitas li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /* Inclui a borda e padding no cálculo da largura */
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 350px; /* Altura fixa para todos os itens */
+    overflow: hidden; /* Garante que nada ultrapasse a borda */
+}
+
+.receitas img {
+    width: 100%;
+    height: auto;
+    max-height: 150px; /* Limita a altura máxima da imagem */
+    margin-bottom: 15px; /* Espaço abaixo da imagem */
+}
+
+.receitas h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #291B1A;
+}
+.receitas a{
+    color: #291B1A;
+}
+.receitas li:hover {
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #F0E8C2;
+}
+.receita-descriçao {
+    font-size: 18px;
+    margin-top: 10px; /* Espaço acima da descrição */
+}
