@@ -1,0 +1,106 @@
+#featured{
+    grid-area: featured;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+     /*Dessa forma a imagem cobre todo o espaco sobrando meio que estica*/
+}
+
+.card{
+    overflow: hidden; 
+    /* Esconde tudo que transborda */
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        top: 50%;
+        background: linear-gradient(
+            180deg,
+            transparent 0,
+            #020617 100%
+        );
+    }/* aqui foi criado o degrade na imagem*/
+
+}
+
+figcaption{
+    position: absolute;
+    bottom: 0;
+    padding: 24px;
+    h2{
+        margin-top: 8px;
+    }
+    &:has(.text-lg){
+        padding: 12px;
+    }
+    
+}
+
+#weekly{
+    grid-area: weekly;
+    padding-block: 12px;
+
+    img{
+        width:  292px;
+        height: 160px;
+    }
+    
+    &>div{
+        grid-template-columns: repeat(4 1fr);
+    }
+    figure{
+        position: relative;
+
+        .content-tag{
+            position: absolute;
+            top: 8px;
+            left: 8px;
+        }
+
+        p{
+            margin-top: 8px;
+            font-weight: 800;
+        }
+    }
+    header{
+        margin-bottom: 24px;
+    }
+}
+section header{
+    border-top: 1px solid var(--stroke-color);
+    font: var(--text-span);
+    a{
+        justify-self: end;
+        align-items: center;
+        gap: 8px;
+        span{
+            background-image: url(/assets/icons/Vector.svg);
+            width: 16px;
+            height: 16px;
+
+        }
+        &:hover span{
+            background-image: url(/assets/icons/ArrowRight-hover.svg);
+        }
+    }
+}
+
+
+#ai{
+       img{
+        width: 176px;
+        aspect-ratio: 1/1;
+        object-fit: cover };
+    h3{
+        margin-block: 8px 4px ;
+    };
+    grid-template-columns: repeat(2 2fr);
+}
+
+
+
+#more{
+    grid-area: aside;
+    height: 100%;
+}

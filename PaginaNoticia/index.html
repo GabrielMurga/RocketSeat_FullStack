@@ -5,11 +5,112 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal de Notícias</title>
-    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Alice&family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
 </head>
 <body>
-    Alo tnc
+    <header class="container">
+        <nav id="primary" class="">
+            <div>
+                <img src="assets/icons/List.svg" alt="Simbolo do menu">
+                <strong>Menu</strong>
+            </div>
+            <div> <img src="assets/Logo.svg" alt="Logo da pagina"></div>
+            <div>
+                <strong>Buscar</strong>
+                <img src="assets/icons/MagnifyingGlass.svg" alt="imagem de lupa">
+            </div>
+        </nav>
+        <nav id="secundary" class="grid grid-flow-col">
+            <a href="">Inteligência Artificial</a>
+            <a href="">Blockchain</a>
+            <a href="">Hologramas</a>
+            <a href="">Internet</a>
+            <a href="">Vestíveis</a>
+            <a href="">Realidade Aumentada</a>
+            <a href="">Realidade  Virtual</a>
+        </nav>
+    </header>
+    <main class=" grid container ">
+        <section id="featured" class="gap16 grid grid-flow-col">
+            <figure class="card">
+                 <img id="img1" src="assets/images/Image 01.png" alt="">  <!--#Impprovisei a img 1 tava ficando torta -->
+                 <figcaption>
+                    <span class="content-tag">Robotica</span>
+                    <h2 class="text-2-xl">Robôs domésticos começam a ser adotados para tarefas diárias, prometendo mais conforto e eficiência nas residências.</h2>
+                </figcaption>
+            </figure class="card">
+            <div class=" grid grid-col-2 gap16">
+                <figure class="card"> 
+                    <img src="assets/images/Image 02.png" alt="Imagem 2">
+                    <figcaption>
+                        <span class="content-tag">Hologramas</span>
+                        <h2 class="text-lg">Novo Smartphone Projetor 3D chega ao mercado, transformando a forma como vemos nossas telas!</h2>
+                    </figcaption>
+                </figure>
+                <figure class="card"> 
+                    <img src="assets/images/Image 03.png" alt="Imagem 3">
+                    <figcaption>
+                        <span class="content-tag">Vestíveis</span>
+                        <h2 class="text-lg">Empresa lança relógio inteligente capaz de monitorar a saúde mental, oferecendo insights valiosos para o...</h2>
+                    </figcaption>
+                </figure>
+                <figure class="card"> 
+                    <img src="assets/images/Image 04.png" alt="Imagem 4">
+                    <figcaption>
+                        <span class="content-tag">Internet</span>
+                        <h2 class="text-lg">Tecnologia 6G chega às metrópoles brasileiras, prometendo revolucionar a forma como vivemos e nos comuni...</h2>
+                    </figcaption>
+                </figure>
+                <figure class="card"> 
+                     <img src="assets/images/Image 05.png" alt="Imagem 5">
+                     <figcaption>
+                        <span class="content-tag">Virtual</span>
+                        <h2 class="text-lg">Escolas adotam a tecnologia VR para proporcionar experiências imersivas, transformando a aprendizagem trad...</h2>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="weekly">
+            <header class="grid grid-flow-col">
+                <h3>Mais lidas da semana</h3>
+                <a href="" class="grid grid-flow-col">
+                    <strong>Ler mais</strong>
+                    <span></span>
+                </a>
+            </header>
+
+            <div class="grid gap16 grid-flow-col">
+                <figure>
+                    <span class="content-tag"> Veiculos</span>
+                    <img src="assets/images/Image 06.png" alt="">
+                    <p>Protótipo de veículo voador é apresentado, marcando o início da era dos transportes aéreos pessoa...</p>
+                </figure>
+
+                <figure>
+                    <span class="content-tag"> Hologramas</span>
+                    <img src="assets/images/Image 07.png" alt="">
+                    <p>Plataforma de videoconferência apresenta nova função de hologramas, tornando as chamadas</p>
+                </figure>
+
+                <figure>
+                    <span class="content-tag">Realidade Virtual</span>
+                    <img src="assets/images/Image 08.png" alt="">
+                    <p>Nova geração de consoles de videogame é lançada, trazendo gráficos ultra-realistas e experiênci.</p>
+                </figure>
+
+                <figure>
+                    <span class="content-tag">Internet</span>
+                    <img src="assets/images/Image 09.png" alt="">
+                    <p>Projeto busca oferecer internet de alta velocidade em áreas remotas através de satélites..</p>
+                </figure>
+            </div>
+        </section>
+
+
+
+    </main>
 </body>
 </html>

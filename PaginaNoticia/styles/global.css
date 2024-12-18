@@ -27,3 +27,47 @@ body{
     background-color: var(--bg-color);
     
 }
+main{
+    margin-top: 40px;
+    row-gap: 80px;
+    column-gap: 32px;
+    grid-template-areas: 
+    "featured featured"
+    "weekly   weekly"
+    "ai         ai" ;
+}
+.container{
+    max-width: 1280px;
+    padding-inline: 32px;
+    margin-inline:auto ;
+}
+.content-tag{
+    display: inline-block;
+    background-color: var(--brand-color-dark);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font: 500 12px/1.2 var(--font-family);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-color-primary);
+    box-shadow: 0px 4px 16px rgba(2, 6, 23, 0.25);
+
+
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    width:100%;   /* Isso aqui faz com quem a imagem tenha o tamanho maximo(ate) da ciaxa que ela esta dentro  */
+}
+h1, h2, h3{
+    font: inherit;
+}
+a:hover{
+    color: var(--brand-color-light);
+}
+#img1{
+    height: 100%;
+    width: 100%;
+}
